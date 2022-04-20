@@ -1,0 +1,30 @@
+.features-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features-list__item {
+  flex-basis: calc((100% - 90px) / 4);
+
+  &::before {
+    content: '';
+    display: block;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--secondary-main-bg-color);
+  }
+}
+
+@each $icon in satellite-dish, watches, diagram, astronaut {
+  .#{$icon}::before {
+    background-image: url('../images/main-features/#{$icon}.svg');
+  }
+}
+
+.features-list__subtitle {
+  margin-bottom: 10px;
+}

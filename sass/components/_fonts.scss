@@ -1,0 +1,31 @@
+.title {
+  margin-bottom: 30px;
+  @include font(900, 44px, 60px, 0.06em);
+  text-transform: uppercase;
+  color: var(--secondary-title-color);
+}
+
+.section-title {
+  margin-bottom: 50px;
+  @include font(700, 36px, 42px, 0.03em);
+  text-align: center;
+  color: var(--primary-title-color);
+}
+
+.subtitle {
+  @include font(700, 14px, 16px, 0.03em);
+  text-transform: uppercase;
+}
+
+.subtitle__theme_light {
+  color: var(--primary-title-color);
+}
+
+.subtitle__theme_dark {
+  color: var(--secondary-title-color);
+}
+
+.description {
+  @include font(400, 14px, 24px, 0.03em);
+  color: var(--text-color);
+}

@@ -1,0 +1,17 @@
+.button {
+  padding: 10px 32px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  @include font(700, 16px, 30px, 0.06em);
+
+  color: var(--secondary-title-color);
+  background-color: var(--accent-color);
+  font-family: var(--primary-font-family);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--button-hover);
+  }
+}

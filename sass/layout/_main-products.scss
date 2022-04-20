@@ -1,0 +1,29 @@
+.main-products {
+  padding-top: 0;
+}
+
+.product-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-list__item {
+  position: relative;
+}
+
+.product-list__subtitle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  text-align: center;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--secondary-title-color);
+}
+
+.product-list__img {
+  display: block;
+}
