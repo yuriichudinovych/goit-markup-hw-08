@@ -17,34 +17,40 @@
   <body>
     <!-- header section -->
     <header class="header">
-      <div class="container header-container">
+      <div class="container header__container">
         <nav class="navigation">
-          <a class="logo header_logo link" lang="en" href="index.html">
+          <a class="logo header__logo link" lang="en" href="index.html">
             Web<span class="logo__theme_light">Studio</span>
           </a>
-          <ul class="nav__list list">
-            <li class="nav__item">
-              <a class="nav__link link current" href="./index.html">Студия</a>
+          <ul class="nav-list list">
+            <li class="nav-list__item">
+              <a class="nav-list__link link nav-list__link_current" href="./index.html">Студия</a>
             </li>
-            <li class="nav__item">
-              <a class="nav__link link" href="./portfolio.html">Портфолио</a>
+            <li class="nav-list__item">
+              <a class="nav-list__link link" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="nav__item">
-              <a class="nav__link link" href="">Контакты</a>
+            <li class="nav-list__item">
+              <a class="nav-list__link link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="contact-list list">
-          <li class="contact-list__item">
-            <a class="contact-list__link link" href="mailto:info@devstudio.com">
+        <ul class="contact-list header__contact-list list">
+          <li class="contact-list__item header__contact-list__item">
+            <a
+              class="contact-list__link header__contact-list__link contact-list__link_theme_light link"
+              href="mailto:info@devstudio.com"
+            >
               <svg class="contact-list__icon" width="16" height="12">
                 <use href="./images/icons.svg#envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="contact-list__item">
-            <a class="contact-list__link link" href="tel:+380961111111">
+          <li class="contact-list__item header__contact-list__item">
+            <a
+              class="contact-list__link header__contact-list__link contact-list__link_theme_light link"
+              href="tel:+380961111111"
+            >
               <svg class="contact-list__icon" width="10" height="16">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
@@ -52,6 +58,61 @@
             >
           </li>
         </ul>
+        <button type="button" class="menu-btn menu-btn-open" data-menu-open>
+          <svg class="menu-button_img" width="40" height="40">
+            <use class="icon-cross" href="./images/icons.svg#menu"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu" data-menu>
+          <div class="container mobile-menu__container">
+            <button type="button" class="menu-btn menu-btn-close" data-menu-close>
+              <svg class="menu-button_img" width="40" height="40">
+                <use class="icon-cross" href="./images/icons.svg#cross"></use>
+              </svg>
+            </button>
+            <ul class="mobile-nav-list list">
+              <li class="mobile-nav-list__item">
+                <a
+                  href="./index.html"
+                  class="mobile-nav-list__link mobile-nav-list__link_current link"
+                  >Студия</a
+                >
+              </li>
+              <li class="mobile-nav-list__item">
+                <a href="./portfolio.html" class="mobile-nav-list__link link">Портфолио</a>
+              </li>
+              <li class="mobile-nav-list__item">
+                <a href="" class="mobile-nav-list__link link">Контакты</a>
+              </li>
+            </ul>
+            <ul class="mobile-contats-list list">
+              <li class="mobile-contats-list__item">
+                <a class="mobile-contats-list__link link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mobile-contats-list__item">
+                <a class="mobile-contats-list__link link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="menu-socials-list list">
+              <li class="menu-socials-list__item">
+                <a class="menu-socials-list__link link" href="">Instagram</a>
+              </li>
+              <li class="menu-socials-list__item">
+                <a class="menu-socials-list__link link" href="">Twitter</a>
+              </li>
+              <li class="menu-socials-list__item">
+                <a class="menu-socials-list__link link" href="">Facebook</a>
+              </li>
+              <li class="menu-socials-list__item">
+                <a class="menu-socials-list__link link" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <!-- main content section -->
@@ -135,17 +196,60 @@
       </section>
       <!-- Our team section -->
       <section class="team section">
-        <div class="container team-container">
+        <div class="container team__container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="employee-list list">
             <li class="employee-list__item">
-              <img
-                class="employee-list__img"
-                src="./images/img.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/employees-photo/desktop-product-designer.webp    1x,
+                    ./images/employees-photo/desktop-product-designer@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/employees-photo/desktop-product-designer.jpg    1x,
+                    ./images/employees-photo/desktop-product-designer@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/employees-photo/tablet-product-designer.webp    1x,
+                    ./images/employees-photo/tablet-product-designer@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/employees-photo/tablet-product-designer.jpg    1x,
+                    ./images/employees-photo/tablet-product-designer@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/employees-photo/mobile-product-designer.webp    1x,
+                    ./images/employees-photo/mobile-product-designer@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/employees-photo/mobile-product-designer.jpg    1x,
+                    ./images/employees-photo/mobile-product-designer@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="employee-list__img"
+                  src="./images/employees-photo/mobile-product-designer.jpg"
+                  alt="Игорь Демьяненко"
+                />
+              </picture>
               <div class="employee-data">
                 <h3 class="employee-data__name">Игорь Демьяненко</h3>
                 <p class="employee-data__position" lang="en">Product Designer</p>
@@ -182,13 +286,56 @@
               </div>
             </li>
             <li class="employee-list__item">
-              <img
-                class="employee-list__img"
-                src="./images/img-1.jpg"
-                alt="Ольга Репина"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/employees-photo/desktop-frontend-developer.webp    1x,
+                    ./images/employees-photo/desktop-frontend-developer@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/employees-photo/desktop-frontend-developer.jpg    1x,
+                    ./images/employees-photo/desktop-frontend-developer@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/employees-photo/tablet-frontend-developer.webp    1x,
+                    ./images/employees-photo/tablet-frontend-developer@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/employees-photo/tablet-frontend-developer.jpg    1x,
+                    ./images/employees-photo/tablet-frontend-developer@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/employees-photo/mobile-frontend-developer.webp    1x,
+                    ./images/employees-photo/mobile-frontend-developer@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/employees-photo/mobile-frontend-developer.jpg    1x,
+                    ./images/employees-photo/mobile-frontend-developer@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="employee-list__img"
+                  src="./images/employees-photo/mobile-frontend-developer.jpg"
+                  alt="Игорь Демьяненко"
+                />
+              </picture>
               <div class="employee-data">
                 <h3 class="employee-data__name">Ольга Репина</h3>
                 <p class="employee-data__position">Frontend Developer</p>
@@ -225,13 +372,56 @@
               </div>
             </li>
             <li class="employee-list__item">
-              <img
-                class="employee-list__img"
-                src="./images/img-2.jpg"
-                alt="Николай Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/employees-photo/desktop-marketing.webp    1x,
+                    ./images/employees-photo/desktop-marketing@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/employees-photo/desktop-marketing.jpg    1x,
+                    ./images/employees-photo/desktop-marketing@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/employees-photo/tablet-marketing.webp    1x,
+                    ./images/employees-photo/tablet-marketing@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/employees-photo/tablet-marketing.jpg    1x,
+                    ./images/employees-photo/tablet-marketing@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/employees-photo/mobile-marketing.webp    1x,
+                    ./images/employees-photo/mobile-marketing@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/employees-photo/mobile-marketing.jpg    1x,
+                    ./images/employees-photo/mobile-marketing@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="employee-list__img"
+                  src="./images/employees-photo/mobile-marketing.jpg"
+                  alt="Игорь Демьяненко"
+                />
+              </picture>
               <div class="employee-data">
                 <h3 class="employee-data__name">Николай Тарасов</h3>
                 <p class="employee-data__position">Marketing</p>
@@ -268,13 +458,56 @@
               </div>
             </li>
             <li class="employee-list__item">
-              <img
-                class="employee-list__img"
-                src="./images/img-3.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/employees-photo/desktop-ui-designer.webp    1x,
+                    ./images/employees-photo/desktop-ui-designer@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/employees-photo/desktop-ui-designer.jpg    1x,
+                    ./images/employees-photo/desktop-ui-designer@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/employees-photo/tablet-ui-designer.webp    1x,
+                    ./images/employees-photo/tablet-ui-designer@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/employees-photo/tablet-ui-designer.jpg    1x,
+                    ./images/employees-photo/tablet-ui-designer@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/employees-photo/mobile-ui-designer.webp    1x,
+                    ./images/employees-photo/mobile-ui-designer@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/employees-photo/mobile-ui-designer.jpg    1x,
+                    ./images/employees-photo/mobile-ui-designer@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="employee-list__img"
+                  src="./images/employees-photo/mobile-ui-designer.jpg"
+                  alt="Игорь Демьяненко"
+                />
+              </picture>
               <div class="employee-data">
                 <h3 class="employee-data__name">Михаил Ермаков</h3>
                 <p class="employee-data__position">UI Designer</p>
@@ -363,24 +596,32 @@
         </div>
       </section>
     </main>
+
     <!-- footer section -->
+
     <footer class="footer">
-      <div class="container footer-container">
-        <div class="contact-container">
+      <div class="container footer__container">
+        <div class="contacts-container">
           <a class="logo footer_logo link" lang="en" href="index.html">
             Web<span class="logo__theme_dark">Studio</span>
           </a>
           <address class="address">
             <p class="description address__description">г. Киев, пр-т Леси Украинки, 26</p>
-            <ul class="address__list list">
-              <li class="address__item">
-                <a class="address__link description link" href="tel:+380961111111"
-                  >+38 096 111 11 11</a
+            <ul class="contact-list list">
+              <li class="contact-list__item footer__contact-list__item">
+                <a
+                  class="contact-list__link contact-list__link_theme_dark description link"
+                  href="tel:+380961111111"
+                >
+                  +38 096 111 11 11</a
                 >
               </li>
-              <li class="address__item">
-                <a class="address__link description link" lang="en" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
+              <li class="contact-list__item footer__contact-list__item">
+                <a
+                  class="contact-list__link contact-list__link_theme_dark description link"
+                  href="mailto:info@devstudio.com"
+                >
+                  info@example.com</a
                 >
               </li>
             </ul>
@@ -428,7 +669,7 @@
             </label>
             <button class="button footer-form__button" type="submit">
               <span class="button__name">Подписаться</span>
-              <svg class="button__icon" width="24" height="24">
+              <svg class="button__icon footer-form__button__icon" width="24" height="24">
                 <use href="./images/icons.svg#telegram"></use>
               </svg>
             </button>
@@ -436,7 +677,7 @@
         </div>
       </div>
     </footer>
-    <!-- modal window -->
+    <!--   window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
@@ -489,7 +730,7 @@
               value="license"
               id="license"
             />
-            <label class="checkbox__field description" for="license">
+            <label class="checkbox__field" for="license">
               Соглашаюсь с рассылкой и принимаю&nbsp;
               <a class="license-link" href="">Условия договора</a>
               <span class="checkbox__icon"></span>
@@ -501,5 +742,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

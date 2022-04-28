@@ -4,3 +4,31 @@
   line-height: $lh/$fs;
   letter-spacing: $ls;
 }
+
+/* Animation for one property */
+
+@mixin animation($animated-property) {
+  transition: $animated-property 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* Animation for two properties */
+@mixin animation-2($animated-property-1, $animated-property-2) {
+  transition: $animated-property-1 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    $animated-property-2 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* mixin for card */
+@mixin itemMargin() {
+  margin: calc(#{$flexItemMargin} / 2);
+}
+@mixin negativeListMargin() {
+  margin: calc(-#{$flexItemMargin} / 2);
+}
+@mixin itemSize($item-number) {
+  flex-basis: calc(100% / #{$item-number} - #{$flexItemMargin});
+  @include itemMargin();
+}
+/* Сontent centering */
+
+@mixin contentCenter() {
+  margin-left: auto;
+  margin-right: auto;
+}

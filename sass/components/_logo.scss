@@ -1,7 +1,11 @@
 .logo {
   color: var(--accent-color);
   font-family: var(--secondary-font-family);
-  @include font(700, 26px, 31px, 0.03em);
+  @include font(700, 24px, 28px, 0.03em);
+
+  @media screen and (min-width: 768px) {
+    @include font(700, 26px, 31px, 0.03em);
+  }
 }
 
 .logo__theme_light {

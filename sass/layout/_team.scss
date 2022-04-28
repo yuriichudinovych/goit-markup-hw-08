@@ -3,21 +3,33 @@
 }
 
 .employee-list {
-  display: flex;
-  margin-left: -30px;
-  margin-top: -30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    @include negativeListMargin();
+  }
 }
 
 .employee-list__item {
-  flex-basis: calc(100% / 4 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
-
   text-align: center;
   background-color: var(--primary-background-color);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: $flexItemMargin;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    @include itemSize(2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include itemSize(4);
+  }
 }
 
 .employee-list__img {
@@ -34,7 +46,7 @@
 }
 
 .employee-data__position {
-  color: var(--text-color);
   @include font(400, 16px, 19px, 0.03em);
+  color: var(--text-color);
   margin-bottom: 10px;
 }
