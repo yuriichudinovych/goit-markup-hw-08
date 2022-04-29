@@ -18,7 +18,7 @@
   @include animation(background-color);
 }
 
-.social-list__link--primary {
+.social-list__link_theme_light {
   background-color: transparent;
 
   &:hover,
@@ -32,7 +32,7 @@
   }
 }
 
-.social-list__link--secondary {
+.social-list__link_theme_dark {
   background-color: rgba(255, 255, 255, 0.1);
   &:hover,
   &:focus {
@@ -49,7 +49,7 @@
     fill: var(--secondary-icon-color);
   }
 
-  .social-list__link--secondary & {
+  .social-list__link_theme_dark & {
     fill: var(--secondary-icon-color);
   }
 }
