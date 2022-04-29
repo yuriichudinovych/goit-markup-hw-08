@@ -1,7 +1,19 @@
+.button-list-container {
+  padding-bottom: 40px;
+}
+
 .button-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: -15px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+}
+
+.button-list__item {
+  margin-bottom: 15px;
 }
 
 .button-list__item:not(:last-child) {
@@ -20,8 +32,8 @@
   @include font(500, 16px, 26px, 0.03em);
   text-align: center;
   border-radius: 4px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include animation-2(background-color, box-shadow);
+
   &:hover,
   &:focus {
     background-color: var(--accent-color);
@@ -32,16 +44,16 @@
 }
 
 .portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  @include negativeListMargin();
+  @media screen and (min-width: 768px) {
+    @include negativeListMargin();
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .portfolio-list__item {
-  &:not(:last-child) {
-    @media screen and (max-width: 767px) {
-      margin-bottom: $flexItemMargin;
-    }
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
   }
 
   @media screen and (min-width: 768px) {
@@ -56,7 +68,7 @@
 .portfolio-list__link {
   display: block;
   color: inherit;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include animation(box-shadow);
   &:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -80,7 +92,7 @@
   color: var(--secondary-title-color);
   @include font(400, 18px, 28px, 0.03em);
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include animation(transform);
 
   .portfolio-list__link:hover &,
   .portfolio-list__link:focus & {
@@ -88,18 +100,15 @@
   }
 }
 
-.overlay__img {
-  display: block;
-}
-
 .meta-data {
-  padding: 20px 24px;
+  padding: 24px;
   border: 1px solid #eeeeee;
   border-top: 0;
   background-color: var(--primery-background-color);
 }
 
 .meta-data__name {
+  margin-bottom: 4px;
   @include font(700, 18px, 36px, 0.06em);
 }
 .meta-data__type {

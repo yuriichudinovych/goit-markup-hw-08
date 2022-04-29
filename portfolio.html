@@ -124,37 +124,81 @@
         <h1 class="title visually-hidden">Портфолио</h1>
         <div class="container">
           <h2 class="section-title visually-hidden">Примеры работ</h2>
-          <ul class="button-list list">
-            <li class="button-list__item">
-              <button class="button-list__button" type="button">Все</button>
-            </li>
-            <li class="button-list__item">
-              <button class="button-list__button" type="button">Веб-сайты</button>
-            </li>
-            <li class="button-list__item">
-              <button class="button-list__button" type="button">Приложения</button>
-            </li>
-            <li class="button-list__item">
-              <button class="button-list__button" type="button">Дизайн</button>
-            </li>
-            <li class="button-list__item">
-              <button class="button-list__button" type="button">Маркетинг</button>
-            </li>
-          </ul>
+          <div class="button-list-container">
+            <ul class="button-list list">
+              <li class="button-list__item">
+                <button class="button-list__button" type="button">Все</button>
+              </li>
+              <li class="button-list__item">
+                <button class="button-list__button" type="button">Веб-сайты</button>
+              </li>
+              <li class="button-list__item">
+                <button class="button-list__button" type="button">Приложения</button>
+              </li>
+              <li class="button-list__item">
+                <button class="button-list__button" type="button">Дизайн</button>
+              </li>
+              <li class="button-list__item">
+                <button class="button-list__button" type="button">Маркетинг</button>
+              </li>
+            </ul>
+          </div>
           <ul class="portfolio-list list">
             <li class="portfolio-list__item">
               <a href="" class="portfolio-list__link link">
                 <div class="overlay">
                   <picture>
-                    <script></script>
+                    <source
+                      srcset="
+                        ./images/portfolio-img/desktop-portfolio-img-1.webp    1x,
+                        ./images/portfolio-img/desktop-portfolio-img-1@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/desktop-portfolio-img-1.jpg    1x,
+                        ./images/portfolio-img/desktop-portfolio-img-1@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/tablet-portfolio-img-1.webp    1x,
+                        ./images/portfolio-img/tablet-portfolio-img-1@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/tablet-portfolio-img-1.jpg    1x,
+                        ./images/portfolio-img/tablet-portfolio-img-1@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/mobile-portfolio-img-1.webp    1x,
+                        ./images/portfolio-img/mobile-portfolio-img-1@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/mobile-portfolio-img-1.jpg    1x,
+                        ./images/portfolio-img/mobile-portfolio-img-1@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="overlay__img"
+                      src="./images/portfolio-img/mobile-portfolio-img-1.jpg"
+                      alt="ноутбук"
+                    />
                   </picture>
-                  <img
-                    class="overlay__img"
-                    src="./images/portfolio-img/mobile-portfolio-img-1.jpg"
-                    alt="ноутбук"
-                    width="370"
-                    height="294"
-                  />
                   <p class="overlay__description">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -171,13 +215,58 @@
             <li class="portfolio-list__item">
               <a href="" class="portfolio-list__link link">
                 <div class="overlay">
-                  <img
-                    class="overlay__img"
-                    src="./images/portfolio/basketball.jpg"
-                    alt=",баскетболисты"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-img/desktop-portfolio-img-2.webp    1x,
+                        ./images/portfolio-img/desktop-portfolio-img-2@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/desktop-portfolio-img-2.jpg    1x,
+                        ./images/portfolio-img/desktop-portfolio-img-2@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/tablet-portfolio-img-2.webp    1x,
+                        ./images/portfolio-img/tablet-portfolio-img-2@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/tablet-portfolio-img-2.jpg    1x,
+                        ./images/portfolio-img/tablet-portfolio-img-2@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/mobile-portfolio-img-2.webp    1x,
+                        ./images/portfolio-img/mobile-portfolio-img-2@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/mobile-portfolio-img-2.jpg    1x,
+                        ./images/portfolio-img/mobile-portfolio-img-2@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="overlay__img"
+                      src="./images/portfolio-img/mobile-portfolio-img-2.jpg"
+                      alt="ноутбук"
+                    />
+                  </picture>
                   <p class="overlay__description">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -194,13 +283,58 @@
             <li class="portfolio-list__item">
               <a href="" class="portfolio-list__link link">
                 <div class="overlay">
-                  <img
-                    class="overlay__img"
-                    src="./images/portfolio/seafood.jpg"
-                    alt="логотип seafood"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-img/desktop-portfolio-img-3.webp    1x,
+                        ./images/portfolio-img/desktop-portfolio-img-3@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/desktop-portfolio-img-3.jpg    1x,
+                        ./images/portfolio-img/desktop-portfolio-img-3@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/tablet-portfolio-img-3.webp    1x,
+                        ./images/portfolio-img/tablet-portfolio-img-3@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/tablet-portfolio-img-3.jpg    1x,
+                        ./images/portfolio-img/tablet-portfolio-img-3@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/mobile-portfolio-img-3.webp    1x,
+                        ./images/portfolio-img/mobile-portfolio-img-3@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/mobile-portfolio-img-3.jpg    1x,
+                        ./images/portfolio-img/mobile-portfolio-img-3@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="overlay__img"
+                      src="./images/portfolio-img/mobile-portfolio-img-3.jpg"
+                      alt="ноутбук"
+                    />
+                  </picture>
                   <p class="overlay__description">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -217,13 +351,58 @@
             <li class="portfolio-list__item">
               <a href="" class="portfolio-list__link link">
                 <div class="overlay">
-                  <img
-                    class="overlay__img"
-                    src="./images/portfolio/prime.jpg"
-                    alt="наушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-img/desktop-portfolio-img-4.webp    1x,
+                        ./images/portfolio-img/desktop-portfolio-img-4@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/desktop-portfolio-img-4.jpg    1x,
+                        ./images/portfolio-img/desktop-portfolio-img-4@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/tablet-portfolio-img-4.webp    1x,
+                        ./images/portfolio-img/tablet-portfolio-img-4@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/tablet-portfolio-img-4.jpg    1x,
+                        ./images/portfolio-img/tablet-portfolio-img-4@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/mobile-portfolio-img-4.webp    1x,
+                        ./images/portfolio-img/mobile-portfolio-img-4@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/mobile-portfolio-img-4.jpg    1x,
+                        ./images/portfolio-img/mobile-portfolio-img-4@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="overlay__img"
+                      src="./images/portfolio-img/mobile-portfolio-img-4.jpg"
+                      alt="ноутбук"
+                    />
+                  </picture>
                   <p class="overlay__description">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -240,13 +419,59 @@
             <li class="portfolio-list__item">
               <a href="" class="portfolio-list__link link">
                 <div class="overlay">
-                  <img
-                    class="overlay__img"
-                    src="./images/portfolio/boxes.jpg"
-                    alt="коробки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-img/desktop-portfolio-img-5.webp    1x,
+                        ./images/portfolio-img/desktop-portfolio-img-5@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/desktop-portfolio-img-5.jpg    1x,
+                        ./images/portfolio-img/desktop-portfolio-img-5@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      `
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/tablet-portfolio-img-5.webp    1x,
+                        ./images/portfolio-img/tablet-portfolio-img-5@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/tablet-portfolio-img-5.jpg    1x,
+                        ./images/portfolio-img/tablet-portfolio-img-5@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/mobile-portfolio-img-5.webp    1x,
+                        ./images/portfolio-img/mobile-portfolio-img-5@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/mobile-portfolio-img-5.jpg    1x,
+                        ./images/portfolio-img/mobile-portfolio-img-5@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="overlay__img"
+                      src="./images/portfolio-img/mobile-portfolio-img-5.jpg"
+                      alt="ноутбук"
+                    />
+                  </picture>
                   <p class="overlay__description">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -263,13 +488,58 @@
             <li class="portfolio-list__item">
               <a href="" class="portfolio-list__link link">
                 <div class="overlay">
-                  <img
-                    class="overlay__img"
-                    src="./images/portfolio/no_bodrers_site.jpg"
-                    alt="персональный компьютер"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-img/desktop-portfolio-img-6.webp    1x,
+                        ./images/portfolio-img/desktop-portfolio-img-6@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/desktop-portfolio-img-6.jpg    1x,
+                        ./images/portfolio-img/desktop-portfolio-img-6@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/tablet-portfolio-img-6.webp    1x,
+                        ./images/portfolio-img/tablet-portfolio-img-6@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/tablet-portfolio-img-6.jpg    1x,
+                        ./images/portfolio-img/tablet-portfolio-img-6@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/mobile-portfolio-img-6.webp    1x,
+                        ./images/portfolio-img/mobile-portfolio-img-6@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/mobile-portfolio-img-6.jpg    1x,
+                        ./images/portfolio-img/mobile-portfolio-img-6@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="overlay__img"
+                      src="./images/portfolio-img/mobile-portfolio-img-6.jpg"
+                      alt="ноутбук"
+                    />
+                  </picture>
                   <p class="overlay__description">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -286,13 +556,58 @@
             <li class="portfolio-list__item">
               <a href="" class="portfolio-list__link link">
                 <div class="overlay">
-                  <img
-                    class="overlay__img"
-                    src="./images/portfolio/limited_edition.jpg"
-                    alt="книга"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-img/desktop-portfolio-img-7.webp    1x,
+                        ./images/portfolio-img/desktop-portfolio-img-7@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/desktop-portfolio-img-7.jpg    1x,
+                        ./images/portfolio-img/desktop-portfolio-img-7@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/tablet-portfolio-img-7.webp    1x,
+                        ./images/portfolio-img/tablet-portfolio-img-7@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/tablet-portfolio-img-7.jpg    1x,
+                        ./images/portfolio-img/tablet-portfolio-img-7@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/mobile-portfolio-img-7.webp    1x,
+                        ./images/portfolio-img/mobile-portfolio-img-7@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/mobile-portfolio-img-7.jpg    1x,
+                        ./images/portfolio-img/mobile-portfolio-img-7@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="overlay__img"
+                      src="./images/portfolio-img/mobile-portfolio-img-7.jpg"
+                      alt="ноутбук"
+                    />
+                  </picture>
                   <p class="overlay__description">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -309,13 +624,58 @@
             <li class="portfolio-list__item">
               <a href="" class="portfolio-list__link link">
                 <div class="overlay">
-                  <img
-                    class="overlay__img"
-                    src="./images/portfolio/lablel_tag.jpg"
-                    alt="этикетка"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-img/desktop-portfolio-img-8.webp    1x,
+                        ./images/portfolio-img/desktop-portfolio-img-8@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/desktop-portfolio-img-8.jpg    1x,
+                        ./images/portfolio-img/desktop-portfolio-img-8@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/tablet-portfolio-img-8.webp    1x,
+                        ./images/portfolio-img/tablet-portfolio-img-8@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/tablet-portfolio-img-8.jpg    1x,
+                        ./images/portfolio-img/tablet-portfolio-img-8@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/mobile-portfolio-img-8.webp    1x,
+                        ./images/portfolio-img/mobile-portfolio-img-8@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/mobile-portfolio-img-8.jpg    1x,
+                        ./images/portfolio-img/mobile-portfolio-img-8@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="overlay__img"
+                      src="./images/portfolio-img/mobile-portfolio-img-8.jpg"
+                      alt="ноутбук"
+                    />
+                  </picture>
                   <p class="overlay__description">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -332,13 +692,58 @@
             <li class="portfolio-list__item">
               <a href="" class="portfolio-list__link link">
                 <div class="overlay">
-                  <img
-                    class="overlay__img"
-                    src="./images/portfolio/growing_business.jpg"
-                    alt="ноутбук"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-img/desktop-portfolio-img-9.webp    1x,
+                        ./images/portfolio-img/desktop-portfolio-img-9@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/desktop-portfolio-img-9.jpg    1x,
+                        ./images/portfolio-img/desktop-portfolio-img-9@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/tablet-portfolio-img-9.webp    1x,
+                        ./images/portfolio-img/tablet-portfolio-img-9@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/tablet-portfolio-img-9.jpg    1x,
+                        ./images/portfolio-img/tablet-portfolio-img-9@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/mobile-portfolio-img-9.webp    1x,
+                        ./images/portfolio-img/mobile-portfolio-img-9@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-img/mobile-portfolio-img-9.jpg    1x,
+                        ./images/portfolio-img/mobile-portfolio-img-9@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="overlay__img"
+                      src="./images/portfolio-img/mobile-portfolio-img-9.jpg"
+                      alt="ноутбук"
+                    />
+                  </picture>
                   <p class="overlay__description">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
