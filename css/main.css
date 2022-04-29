@@ -1401,8 +1401,8 @@ body.menu-open {
   margin-right: auto;
   padding-top: 118px;
   padding-bottom: 118px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(var(--opacity-bg), 0.4)), to(rgba(var(--opacity-bg), 0.4))), url(../../images/hero-bg/mobile-hero-bg.jpg);
-  background-image: linear-gradient(to right, rgba(var(--opacity-bg), 0.4), rgba(var(--opacity-bg), 0.4)), url(../../images/hero-bg/mobile-hero-bg.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(var(--opacity-bg), 0.4)), to(rgba(var(--opacity-bg), 0.4))), url(../images/hero-bg/mobile-hero-bg.jpg);
+  background-image: linear-gradient(to right, rgba(var(--opacity-bg), 0.4), rgba(var(--opacity-bg), 0.4)), url(../images/hero-bg/mobile-hero-bg.jpg);
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -1414,22 +1414,22 @@ body.menu-open {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(var(--opacity-bg), 0.4)), to(rgba(var(--opacity-bg), 0.4))), url(../../images/hero-bg/mobile-hero-bg@2x.jpg);
-    background-image: linear-gradient(to right, rgba(var(--opacity-bg), 0.4), rgba(var(--opacity-bg), 0.4)), url(../../images/hero-bg/mobile-hero-bg@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(var(--opacity-bg), 0.4)), to(rgba(var(--opacity-bg), 0.4))), url(../images/hero-bg/mobile-hero-bg@2x.jpg);
+    background-image: linear-gradient(to right, rgba(var(--opacity-bg), 0.4), rgba(var(--opacity-bg), 0.4)), url(../images/hero-bg/mobile-hero-bg@2x.jpg);
   }
 }
 
 @media screen and (min-width: 481px) and (min-dvice-pixel-retio: 1), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 1), screen and (min-width: 481px) and (min-resolution: 96dpi), screen and (min-width: 481px) and (min-resolution: 1dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(var(--opacity-bg), 0.4)), to(rgba(var(--opacity-bg), 0.4))), url(../../images/hero-bg/tablet-hero-bg.jpg);
-    background-image: linear-gradient(to right, rgba(var(--opacity-bg), 0.4), rgba(var(--opacity-bg), 0.4)), url(../../images/hero-bg/tablet-hero-bg.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(var(--opacity-bg), 0.4)), to(rgba(var(--opacity-bg), 0.4))), url(../images/hero-bg/tablet-hero-bg.jpg);
+    background-image: linear-gradient(to right, rgba(var(--opacity-bg), 0.4), rgba(var(--opacity-bg), 0.4)), url(../images/hero-bg/tablet-hero-bg.jpg);
   }
 }
 
 @media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(var(--opacity-bg), 0.4)), to(rgba(var(--opacity-bg), 0.4))), url(../../images/hero-bg/tablet-hero-bg@2x.jpg);
-    background-image: linear-gradient(to right, rgba(var(--opacity-bg), 0.4), rgba(var(--opacity-bg), 0.4)), url(../../images/hero-bg/tablet-hero-bg@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(var(--opacity-bg), 0.4)), to(rgba(var(--opacity-bg), 0.4))), url(../images/hero-bg/tablet-hero-bg@2x.jpg);
+    background-image: linear-gradient(to right, rgba(var(--opacity-bg), 0.4), rgba(var(--opacity-bg), 0.4)), url(../images/hero-bg/tablet-hero-bg@2x.jpg);
   }
 }
 
@@ -1442,15 +1442,15 @@ body.menu-open {
 
 @media screen and (min-width: 769px) and (min-dvice-pixel-retio: 1), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 1), screen and (min-width: 769px) and (min-resolution: 96dpi), screen and (min-width: 769px) and (min-resolution: 1dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(var(--opacity-bg), 0.4)), to(rgba(var(--opacity-bg), 0.4))), url(../../images/hero-bg/desktop-hero-bg.jpg);
-    background-image: linear-gradient(to right, rgba(var(--opacity-bg), 0.4), rgba(var(--opacity-bg), 0.4)), url(../../images/hero-bg/desktop-hero-bg.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(var(--opacity-bg), 0.4)), to(rgba(var(--opacity-bg), 0.4))), url(../images/hero-bg/desktop-hero-bg.jpg);
+    background-image: linear-gradient(to right, rgba(var(--opacity-bg), 0.4), rgba(var(--opacity-bg), 0.4)), url(../images/hero-bg/desktop-hero-bg.jpg);
   }
 }
 
 @media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(var(--opacity-bg), 0.4)), to(rgba(var(--opacity-bg), 0.4))), url(../../images/hero-bg/desktop-hero-bg@2x.jpg);
-    background-image: linear-gradient(to right, rgba(var(--opacity-bg), 0.4), rgba(var(--opacity-bg), 0.4)), url(../../images/hero-bg/desktop-hero-bg@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(var(--opacity-bg), 0.4)), to(rgba(var(--opacity-bg), 0.4))), url(../images/hero-bg/desktop-hero-bg@2x.jpg);
+    background-image: linear-gradient(to right, rgba(var(--opacity-bg), 0.4), rgba(var(--opacity-bg), 0.4)), url(../images/hero-bg/desktop-hero-bg@2x.jpg);
   }
 }
 
