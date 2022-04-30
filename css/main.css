@@ -666,7 +666,7 @@ body.modal-open {
 
 /* Mobile menu */
 .mobile-menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
