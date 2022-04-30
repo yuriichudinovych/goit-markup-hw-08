@@ -10,6 +10,7 @@
 
   function toggleModal() {
     document.body.classList.toggle('menu-open');
+
     refs.menu.classList.toggle('is-open');
   }
 })();

@@ -11,6 +11,6 @@ refs.openModalBtn.forEach(el => {
 refs.closeModalBtn.addEventListener('click', toggleModal);
 
 function toggleModal() {
-  document.body.classList.toggle('menu-open');
+  document.body.classList.toggle('modal-open');
   refs.modal.classList.toggle('is-hidden');
 }

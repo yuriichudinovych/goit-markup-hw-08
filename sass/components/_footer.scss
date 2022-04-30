@@ -13,10 +13,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    padding-left: 61px;
+    justify-content: space-around;
   }
 }
 
@@ -57,9 +54,6 @@
     margin-bottom: 60px;
   }
 
-  @media screen and (min-width: 768px) {
-    margin-right: 165px;
-  }
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
   }
@@ -76,9 +70,6 @@
 }
 
 .footer-form-container {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-left: 105px;
-  }
   @media screen and (min-width: 1200px) {
     margin-left: auto;
   }
